@@ -61,10 +61,8 @@ def main(args):
         load_best_model_at_end=True,
         metric_for_best_model=args.metric_for_best_model,
         greater_is_better=args.greater_is_better,
-        logging_dir=args.logging_dir or f"{args.output_dir}/logs",
         logging_steps=args.logging_steps,
         lr_scheduler_type = "linear",
-        warmup_ratio = 0.1,
         torch_compile=True,
     )
 
